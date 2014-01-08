@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/category_background_color">
+    <ScrollView 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        >
+        
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        >
+    <ImageView 
+	    android:id="@+id/cover"
+	    android:layout_width="fill_parent"
+	    android:layout_height="218dp"/>
+    
+    <ImageView
+	    android:id="@+id/free_tips"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/free_tips"
+	    android:layout_alignTop="@id/cover"
+	    android:layout_alignLeft="@id/cover"/>
+    
+    <RelativeLayout 
+        android:id="@+id/layout_cover"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/cover"
+        android:background="@drawable/detail_bg1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+    	    
+	    <TextView 
+	        android:id="@+id/tv_price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/cover"
+	        android:layout_marginLeft="18dp"
+	        android:layout_centerVertical="true"
+	        android:textColor="@color/sublist_count_color"
+	        android:textSize="36dp"
+	        android:text="38"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_yuan"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/tv_price"
+	        android:layout_alignBottom="@id/tv_price"
+	        android:textColor="@color/sublist_count_color"
+	        android:textSize="18dp"
+	        android:text="@string/yuan"/>
+	    
+	    <Button 
+	        android:id="@+id/get_button"
+	        android:layout_width="60dp"
+	        android:layout_height="36dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/detail_btn_n"
+	        android:text="@string/buy"
+	        android:textSize="16dp"
+	        android:textColor="@color/white"/>   
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_cover"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textColor="@color/gray4"
+        android:textSize="18dp"
+        android:text="莱利电玩城"/>
+    
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignLeft="@id/title"
+        android:textColor="@color/sublist_description_color"    
+        android:textSize="15dp"
+        android:text="游戏币100个，无需预约，尽情玩游戏！先到先得，抢完为止！"/>
+    
+    <RelativeLayout 
+        android:id="@+id/grade"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/description"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_above">
+        
+        <ImageView 
+            android:id="@+id/star_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/detail_star_gray"/>
+        
+        <ImageView 
+            android:id="@+id/star_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/star_1"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/detail_star_gray"/>
+        
+        <ImageView 
+            android:id="@+id/star_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/star_2"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/detail_star_gray"/>
+        
+        <ImageView 
+            android:id="@+id/star_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/star_3"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/detail_star_gray"/>
+        
+        <ImageView 
+            android:id="@+id/star_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/star_4"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/detail_star_gray"/>
+        
+        <TextView 
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/star_5"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/detail_text_color_1"    
+            android:textSize="15dp"
+            android:text="4.9"/>
+        
+        <TextView 
+            android:id="@+id/grade_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/grade"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/detail_text_color_1"    
+            android:textSize="15dp"
+            android:text="152人评分"/>
+        
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_right"/>   
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/bought"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/grade"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_center">
+        
+        <ImageView 
+            android:id="@+id/imageview_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/my_icon6"/>
+        
+        <TextView 
+            android:id="@+id/textview_bought_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageview_people"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray4"
+            android:textSize="15dp"
+            android:text="@string/buy_num"/>
+        
+        <ImageView 
+            android:id="@+id/imageview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/textview_bought_num"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/my_icon7"/>
+        
+        <TextView 
+            android:id="@+id/textview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageview_time"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray4"
+            android:textSize="15dp"
+            android:text="76天8小时48分"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/merchant"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/bought"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_above">
+        
+        <TextView 
+            android:id="@+id/tv_merchant_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:text="@string/merchant_info"
+            android:textSize="15dp"
+            android:textColor="@color/gray4"/>       
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/merchant_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/merchant"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_center">
+        
+        <TextView 
+            android:id="@+id/tv_merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="11dp"            
+            android:textSize="18dp"
+            android:textColor="@color/gray4"
+            android:text="莱利电玩城"/>       
+            
+        <TextView 
+            android:id="@+id/merchant_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_merchant_name"
+            android:layout_alignLeft="@id/tv_merchant_name"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/sublist_description_color"
+            android:textSize="15dp"
+            android:text="昌平区慧公馆镇挺远10号楼2-B-1107"/>
+        
+        <ImageView 
+            android:id="@+id/merchant_distance_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/merchant_address"
+            android:layout_alignLeft="@id/merchant_address"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/my_icon8"/>
+        
+        <TextView 
+            android:id="@+id/merchant_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/merchant_distance_icon"
+            android:layout_alignTop="@id/merchant_distance_icon"
+            android:textColor="@color/sublist_description_color"
+            android:textSize="15dp"
+            android:text="1.9km"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/cherchant_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/merchant_detail"
+        android:background="@drawable/detail_bg1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        >
+        
+        <TextView 
+            android:id="@+id/tv_view_all_merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/merchant_all"
+            android:textColor="@color/sublist_count_color"
+            android:textSize="15dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_view_all_merchant"
+            android:layout_centerVertical="true"
+            android:background="@drawable/detail_arrow_blue"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/group_set"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/cherchant_bottom"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_above">
+        
+        <TextView 
+            android:id="@+id/tv_group_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:text="@string/group_set"
+            android:textSize="15dp"
+            android:textColor="@color/gray4"/>        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/group_set_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_set"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_center"
+        >
+        <TextView 
+            android:id="@+id/tv_set_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="11dp"
+            android:text="热点卡一张"
+            android:textSize="18dp"
+            android:textColor="@color/gray4"/> 
+            
+        <TextView 
+            android:id="@+id/tv_set_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_alignTop="@id/tv_set_name"
+            android:text="240元"
+            android:textSize="15dp"
+            android:textColor="@color/gray4"/>
+        
+        <TextView
+            android:id="@+id/tv_set_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_set_name"
+            android:layout_marginTop="7dp"
+            android:layout_alignLeft="@id/tv_set_name"
+            android:textColor="@color/sublist_description_color"
+            android:textSize="15dp"
+            android:text="温馨提示：凭美团券到店消费不可同时享受店内其他优惠，每人限用1张美团券，补差价规则以影院公告为准"/>"
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/set_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/group_set_info"
+        android:background="@drawable/detail_bg1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        >
+        
+        <TextView 
+            android:id="@+id/tv_view_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/check_detail"
+            android:textColor="@color/sublist_count_color"
+            android:textSize="15dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_arrow_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_view_detail"
+            android:layout_centerVertical="true"
+            android:background="@drawable/detail_arrow_blue"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/discuss"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/set_bottom"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_above">
+        
+        <TextView 
+            android:id="@+id/tv_group_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:text="@string/discuss"
+            android:textSize="15dp"
+            android:textColor="@color/gray4"/>        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/discuss_info_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discuss"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_center"
+        >
+        <TextView 
+            android:id="@+id/discuss_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="11dp"
+            android:text="sa**1"
+            android:textSize="15dp"
+            android:textColor="@color/sublist_count_color"/> 
+            
+        <TextView 
+            android:id="@+id/discuss_info_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/discuss_name_1"
+            android:layout_alignLeft="@id/discuss_name_1"
+            android:layout_marginTop="7dp"
+            android:text="太棒了，比直接去买便宜了一半，下次还来哦~希望有更多优惠~"
+            android:textSize="16dp"
+            android:textColor="@color/gray4"/>      
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/discuss_info_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discuss_info_1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_center"
+        >
+        <TextView 
+            android:id="@+id/discuss_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="11dp"
+            android:text="魔法骑士"
+            android:textSize="15dp"
+            android:textColor="@color/sublist_count_color"/> 
+            
+        <TextView 
+            android:id="@+id/discuss_info_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/discuss_name_2"
+            android:layout_alignLeft="@id/discuss_name_2"
+            android:layout_marginTop="7dp"
+            android:text="有待改善啊，没有预期的好"
+            android:textSize="16dp"
+            android:textColor="@color/gray4"/>      
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/discuss_info_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discuss_info_2"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/my_tab_center"
+        >
+        <TextView 
+            android:id="@+id/discuss_name_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="11dp"
+            android:text="爱******生"
+            android:textSize="15dp"
+            android:textColor="@color/sublist_count_color"/> 
+            
+        <TextView 
+            android:id="@+id/discuss_info_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/discuss_name_3"
+            android:layout_alignLeft="@id/discuss_name_3"
+            android:layout_marginTop="7dp"
+            android:text="本来以为活动不好，原来是自己看错了，给了错误的评价，太不好了"
+            android:textSize="16dp"
+            android:textColor="@color/gray4"/>      
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/discuss_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/discuss_info_3"
+        android:background="@drawable/detail_bg1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+
+        >
+        
+        <TextView 
+            android:id="@+id/tv_view_discuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/view_all_discuss"
+            android:textColor="@color/sublist_count_color"
+            android:textSize="15dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/iv_arrow_discuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_view_discuss"
+            android:layout_centerVertical="true"
+            android:background="@drawable/detail_arrow_blue"
+            />
+    </RelativeLayout>
+    
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

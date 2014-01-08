@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">聚给力</string>
+    <string name="action_settings">设置</string>
+
+    <!-- 电影页面 -->
+    <string name="movie_title">电影</string>
+
+    <!-- 周边 -->
+    <string name="location_title">周边</string>
+    <string name="new_book">新单</string>
+    <string name="food">美食</string>
+    <string name="play">娱乐</string>
+    <string name="movie">电影</string>
+    <string name="ktv">KTV</string>
+    <string name="wash">洗浴</string>
+    <string name="hotel">酒店</string>
+    <string name="rewards">积分</string>
+    <string name="phone">手机</string>
+
+    <!-- 团购 -->
+    <string name="tuangou_title">团购</string>
+    <string name="tuangou_yuan">元</string>
+    <string name="tuangou_ren">人</string>
+    <string name="order_default">默认排序</string>
+    <string name="order_near">离我最近</string>
+    <string name="order_comment">评价最高</string>
+    <string name="order_new">最新发布</string>
+    <string name="order_popu">人气最高</string>
+    <string name="order_low_price">价格最低</string>
+    <string name="order_high_price">价格最高</string>
+
+    <!-- 我的 -->
+    <string name="profile_title">我的</string>
+    <string name="balance">账户余额：</string>
+    <string name="yuan">元</string>
+    <string name="my_ticket">我的给力券</string>
+    <string name="my_profile">我的信息</string>
+    <string name="everyday_rec">每日推荐</string>
+    <string name="unpay">待付款订单</string>
+    <string name="payed">已付款订单</string>
+    <string name="lucky">抽奖单</string>
+    <string name="coupon">代金券</string>
+    
+    <!-- 详情 -->
+    <string name="buy">立即抢购</string>
+    <string name="buy_num">人已购买</string>
+    <string name="merchant_info">商家信息</string>
+    <string name="merchant_all">查看全部分店</string>
+    <string name="group_set">套餐</string>
+    <string name="check_detail">查看图文详情</string>
+    <string name="discuss">评价</string>
+    <string name="view_all_discuss">查看全部评价</string>
+    
+    <!-- 更多 -->
+    <string name="more_title">更多</string>
+    
+    <!-- 登录 -->
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="email_password_error_tips">邮箱和密码都不能为空</string>
+    
+    
+    <string name="network_error_tips">网络错误</string>
+
+    
+</resources>

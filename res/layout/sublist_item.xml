@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="8dp">
+
+    <com.plugin.common.view.WebImageView
+        android:id="@+id/cover"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:padding="3dp"
+        android:src="@drawable/default_cover"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/cover_background"/>
+
+    <ImageView
+        android:id="@+id/free_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/free_tips"
+        android:layout_alignTop="@id/cover"
+        android:layout_alignLeft="@id/cover"/>
+
+    <ImageView
+        android:id="@+id/new_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/new_icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cover"
+        android:layout_alignTop="@id/cover"
+        android:layout_toLeftOf="@id/new_icon"
+        android:textColor="@color/sublist_title_color"
+        android:textSize="@dimen/sublist_title_size"
+        android:singleLine="true"
+        android:text="【中国】测试一踏嘎嘎啊个"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cover"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title"
+        android:maxLines="2"
+        android:textColor="@color/sublist_description_color"
+        android:textSize="@dimen/sublist_description_size"
+        android:text="发顺丰卡死框架的发哈上飞机卡死发哈手机卡搞哈康晶fkashfjahgjahg发沙发上发发沙发上发沙发上发沙发上发放kj"/>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cover"
+        android:layout_toRightOf="@id/cover"
+        android:textSize="@dimen/sublist_count_size"
+        android:textColor="@color/sublist_count_color"
+        android:text="30元"/>
+
+    <TextView
+        android:id="@+id/origin_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/count"
+        android:layout_alignBottom="@id/cover"
+        android:textSize="@dimen/sublist_origin_count_size"
+        android:textColor="@color/sublist_origin_count_color"
+        android:layout_marginLeft="5dp"
+        android:textStyle="italic"
+        android:text="40"/>
+
+    <TextView
+        android:id="@+id/dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/cover"
+        android:textColor="@color/sublist_dest_color"
+        android:textSize="@dimen/sublist_dest_size"
+        android:text="28m"/>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- sublist item textsize -->
+    <dimen name="sublist_title_size">17sp</dimen>
+    <dimen name="sublist_description_size">14sp</dimen>
+    <dimen name="sublist_count_size">22sp</dimen>
+    <dimen name="sublist_origin_count_size">13sp</dimen>
+    <dimen name="sublist_dest_size">13sp</dimen>
+    <dimen name="sublist_bottom_location_size">13sp</dimen>
+    <dimen name="sublist_top_size">15sp</dimen>
+    
+    <!-- detail textsize -->
+    <dimen name="detail_price_size">36sp</dimen>
+    <dimen name="detail_origin_price_size">18sp</dimen>
+
+</resources>
